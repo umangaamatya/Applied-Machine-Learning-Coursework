@@ -17,6 +17,28 @@ env/
 # ===============================
 .ipynb_checkpoints/
 
+# ===============================
+# Machine Learning Model Artifacts
+# ===============================
+
+# Trained models and checkpoints
+models/**/checkpoints/
+models/**/best_checkpoint/
+models/**/*.pt
+models/**/*.bin
+models/**/*.safetensors
+
+# Optimizer and trainer states
+models/**/optimizer.pt
+models/**/scheduler.pt
+models/**/trainer_state.json
+models/**/training_args.bin
+
+# Tokenizers (optional – generated automatically)
+models/**/tokenizer.json
+models/**/tokenizer_config.json
+models/**/special_tokens_map.json
+models/**/vocab.txt
 
 # ===============================
 # Logs & caches

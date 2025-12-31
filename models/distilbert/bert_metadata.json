@@ -1,0 +1,34 @@
+{
+  "model": "distilbert-base-uncased",
+  "max_length": 128,
+  "seed": 42,
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "batch_size_train": 16,
+  "batch_size_eval": 32,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.0,
+  "label_to_id": {
+    "ham": 0,
+    "spam": 1
+  },
+  "id_to_label": {
+    "0": "ham",
+    "1": "spam"
+  },
+  "sizes": {
+    "train": 4135,
+    "val": 517,
+    "test": 517
+  },
+  "metrics_test": {
+    "accuracy": 0.9922630560928434,
+    "precision": 0.9841269841269841,
+    "recall": 0.9538461538461539,
+    "f1": 0.96875,
+    "roc_auc": 0.9996596324029953,
+    "ap": 0.9977199741638416
+  },
+  "device": "mps",
+  "best_checkpoint_dir": "/Users/amatyaumanga/Downloads/Applied-Machine-Learning-Coursework/models/distilbert/best_checkpoint"
+}
