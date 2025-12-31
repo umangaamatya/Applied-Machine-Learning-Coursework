@@ -26,7 +26,7 @@ To ensure a fair comparison, both models use the **same stratified 80/10/10 trai
 ---
 
 ## 📁 Project Structure
-
+```bash
 ├── README.md
 ├── data
 │   ├── cleaned
@@ -49,7 +49,7 @@ To ensure a fair comparison, both models use the **same stratified 80/10/10 trai
 ├── preprocessing.py
 ├── train_bert.py
 └── train_nb.py
-
+```
 ---
 
 ## ✅ Key Learning Outcomes
