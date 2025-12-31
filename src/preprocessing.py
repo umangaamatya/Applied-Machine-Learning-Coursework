@@ -43,7 +43,7 @@ def clean_dataframe(df: pd.DataFrame, label_col: str, text_col: str) -> pd.DataF
     # Drop empty text rows
     out = out[out["text"].str.strip().astype(bool)].copy()
 
-    # Drop duplicates (optional but helpful)
+    # Drop duplicates
     out = out.drop_duplicates(subset=["label", "text"]).copy()
 
     out["text_clean"] = out["text"].apply(normalize_text)
@@ -53,7 +53,6 @@ def clean_dataframe(df: pd.DataFrame, label_col: str, text_col: str) -> pd.DataF
 def detect_label_and_text_columns(df: pd.DataFrame) -> tuple[str, str]:
     """
     Auto-detect label and text columns for common SMS spam datasets.
-    You can override in notebook if needed.
     """
     cols = list(df.columns)
     low_map = {c.lower(): c for c in cols}

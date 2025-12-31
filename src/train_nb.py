@@ -143,7 +143,7 @@ def run_naive_bayes_pipeline(
         save_prefix="nb"
     )
 
-    # Save sample predictions (for screenshots)
+    # Save sample predictions
     os.makedirs(preds_dir, exist_ok=True)
     sample_df = test_df.copy()
     sample_df["true_label"] = y_test
@@ -169,7 +169,7 @@ def run_naive_bayes_pipeline(
     top_spam_terms = feature_names[top_spam_idx]
     top_spam_scores = indicative[top_spam_idx].tolist()
 
-    # Save top features plot (simple)
+    # Save top features plot
     import matplotlib.pyplot as plt
     os.makedirs(plots_dir, exist_ok=True)
     plt.figure()
