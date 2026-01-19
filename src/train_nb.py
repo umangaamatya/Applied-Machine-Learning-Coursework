@@ -195,7 +195,7 @@ def run_naive_bayes_pipeline(
         pickle.dump(final_nb, f)
 
     meta = {
-        "model": "Multinomial Naive Bayes (from scratch)",
+        "model": "Multinomial Naive Bayes",
         "best_alpha": best_alpha,
         "alphas_tested": list(alphas),
         "tfidf": {
